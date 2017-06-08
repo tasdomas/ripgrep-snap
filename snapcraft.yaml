@@ -1,6 +1,7 @@
 name: rg
-version: 0.4.0
+version: 0.5.2
 summary: a command line search tool
+grade: stable
 description: |
   ripgrep is a command line search tool that
   combines the usability of The Silver Searcher
@@ -14,4 +15,4 @@ parts:
   rg:
     plugin: rust
     source: https://github.com/BurntSushi/ripgrep.git
-    source-tag: 0.4.0
+    source-tag: 0.5.2
