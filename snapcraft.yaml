@@ -1,5 +1,5 @@
 name: rg
-version: 0.5.2
+version: 0.7.1
 summary: a command line search tool
 grade: stable
 description: |
@@ -15,4 +15,4 @@ parts:
   rg:
     plugin: rust
     source: https://github.com/BurntSushi/ripgrep.git
-    source-tag: 0.5.2
+    source-tag: 0.7.1
