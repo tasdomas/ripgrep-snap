@@ -17,5 +17,6 @@ apps:
 parts:
   rg:
     plugin: rust
+    rust-revision: 1.26.2
     source: https://github.com/BurntSushi/ripgrep.git
     source-tag: 0.8.1
