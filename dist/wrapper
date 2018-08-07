@@ -1,0 +1,13 @@
+#!/bin/bash
+${SNAP}/bin/rg-actual "$@"
+if [ -t 1 ]
+then
+  echo "\
+
+WARNING: the rg snap will be deprecated. Please switch to the ripgrep snap.
+
+$ sudo snap remove rg
+$ sudo snap install ripgrep
+$ sudo snap alias ripgrep.rg rg
+"
+fi

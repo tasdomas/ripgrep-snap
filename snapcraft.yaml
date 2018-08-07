@@ -9,7 +9,7 @@ description: |
   usability of The Silver Searcher (similar to ack) with the raw
   speed of GNU grep.
   The snap is maintained at github.com/tasdomas/ripgrep-snap
-confinement: classic
+confinement: strict
 apps:
   rg:
     command: rg
@@ -20,3 +20,10 @@ parts:
     rust-revision: 1.26.2
     source: https://github.com/BurntSushi/ripgrep.git
     source-tag: 0.8.1
+    organize:
+      bin/rg: bin/rg-actual
+  wrapper:
+    plugin: dump
+    after: ['rg']
+    organize:
+      dist/wrapper: bin/rg
